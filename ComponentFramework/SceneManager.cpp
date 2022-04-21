@@ -4,7 +4,10 @@
 #include "Window.h"
 #include "Scene0.h" //Basic sphere in 3D
 #include "Scene1.h"//Assignmnet 1 - Mario with two light. No xtras YET! 
-#include "Scene2.h"
+#include "Scene2.h"//Skull three eyes moving
+#include "Scene3.h"//Simple skybox - not that simple
+#include "Scene4.h"
+
 #include "ScenePlanet.h"
 //Fancy cool way to start a class
 SceneManager::SceneManager(): 
@@ -47,7 +50,7 @@ bool SceneManager::Initialize(std::string name_, int width_, int height_) {
 	}
 
 	/********************************   Default first scene   ***********************/
-	BuildNewScene(SCENE_NUMBER::SCENE2);
+	BuildNewScene(SCENE_NUMBER::SCENE4);
 	
 	return true;
 }
@@ -91,6 +94,12 @@ void SceneManager::HandleEvents() {
 			case SDL_SCANCODE_F2:
 				BuildNewScene(SCENE_NUMBER::SCENE2);
 				break;
+			case SDL_SCANCODE_F3:
+				BuildNewScene(SCENE_NUMBER::SCENE3);
+				break;
+			case SDL_SCANCODE_F4:
+				BuildNewScene(SCENE_NUMBER::SCENE4);
+				break;
 			case SDL_SCANCODE_F6:
 				BuildNewScene(SCENE_NUMBER::SCENE6);
 				break;
@@ -129,6 +138,14 @@ void SceneManager::BuildNewScene(SCENE_NUMBER scene) {
 
 	case SCENE_NUMBER::SCENE2:
 		currentScene = new Scene2();
+		status = currentScene->OnCreate();
+		break;
+	case SCENE_NUMBER::SCENE3:
+		currentScene = new Scene3();
+		status = currentScene->OnCreate();
+		break;
+	case SCENE_NUMBER::SCENE4:
+		currentScene = new Scene4();
 		status = currentScene->OnCreate();
 		break;
 

@@ -127,8 +127,10 @@
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Debug.cpp" />
     <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="Randomizer.cpp" />
     <ClCompile Include="Scene1.cpp" />
     <ClCompile Include="Scene2.cpp" />
+    <ClCompile Include="Scene4.cpp" />
     <ClCompile Include="ScenePlanet.cpp" />
     <ClCompile Include="Scene3.cpp" />
     <ClCompile Include="SceneManager.cpp" />
@@ -136,8 +138,10 @@
     <ClCompile Include="MMath.cpp" />
     <ClCompile Include="Scene0.cpp" />
     <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Skybox.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Trackball.cpp" />
     <ClCompile Include="VMath.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
@@ -148,8 +152,10 @@
     <ClInclude Include="Component.h" />
     <ClInclude Include="Debug.h" />
     <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Randomizer.h" />
     <ClInclude Include="Scene1.h" />
     <ClInclude Include="Scene2.h" />
+    <ClInclude Include="Scene4.h" />
     <ClInclude Include="ScenePlanet.h" />
     <ClInclude Include="Scene3.h" />
     <ClInclude Include="SceneManager.h" />
@@ -159,10 +165,12 @@
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Scene0.h" />
     <ClInclude Include="Shader.h" />
+    <ClInclude Include="Skybox.h" />
     <ClInclude Include="Sphere.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="Timer.h" />
     <ClInclude Include="tiny_obj_loader.h" />
+    <ClInclude Include="Trackball.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="VMath.h" />
     <ClInclude Include="Window.h" />
@@ -172,11 +180,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\defaultFrag.glsl" />
-    <None Include="shaders\defaultVert.glsl" />
+    <None Include="shaders\defaultVert.glsl">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
     <None Include="shaders\multiLightsFrag.glsl" />
     <None Include="shaders\multiLightsVert.glsl" />
     <None Include="shaders\phongFrag.glsl" />
     <None Include="shaders\phongVert.glsl" />
+    <None Include="shaders\reflectionFrag.glsl" />
+    <None Include="shaders\reflectionVert.glsl" />
+    <None Include="shaders\skyboxFrag.glsl" />
+    <None Include="shaders\skyboxVert.glsl" />
     <None Include="shaders\textureFrag.glsl" />
     <None Include="shaders\textureVert.glsl" />
   </ItemGroup>

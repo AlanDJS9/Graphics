@@ -1,5 +1,5 @@
-#ifndef SCENE3_H
-#define SCENE3_H
+#ifndef SCENE4_H
+#define SCENE4_H
 #include "Scene.h"
 
 #include "Vector.h"
@@ -15,21 +15,19 @@ class Shader;
 class Texture;
 class Camera;
 
-class Scene3 : public Scene {
+class Scene4 : public Scene {
 private:
 	//Need to delete pointer
-	Actor* skull;
-	Actor* leftEye;
+	Actor* sphere;
 	Shader* shader;
 	Camera* camera;
 	//Created on the stack, will disapear when program exits
 	Matrix4 projectionMatrix;
 	Matrix4 viewMatrix;
-	Vec3 lightPos;
 
 public:
-	explicit Scene3();
-	virtual ~Scene3();
+	explicit Scene4();
+	virtual ~Scene4();
 
 	virtual bool OnCreate() override;
 	virtual void OnDestroy() override;

@@ -4,6 +4,8 @@
 #include "Vector.h"
 #include "Matrix.h"
 #include "Texture.h"
+#include "Trackball.h"
+
 using namespace MATH;
 
 /// Forward declarations 
@@ -17,11 +19,26 @@ private:
 	//Need to delete pointer
 	Actor* skull;
 	Actor* leftEye;
+	Actor* rightEye;
+	Actor* thirdEye;
+
+
 	Shader* shader;
 	//Created on the stack, will disapear when program exits
 	Matrix4 projectionMatrix;
 	Matrix4 viewMatrix;
+	Matrix4 trackballInput;
+	Matrix4 leftEyeCombinedMatrix;
+	Matrix4 rightEyeCombinedMatrix;
+	Matrix4 thirdEyeCombinedMatrix;
+
+
+	Matrix4 baseEyeRotation = MMath::rotate(-90.0f, Vec3(0.0f, 1.0f, 0.0f));
+	Matrix4 crazyEyeRotation;
+
+	Trackball* trackball;
 	Vec3 lightPos;
+
 
 public:
 	explicit Scene2();

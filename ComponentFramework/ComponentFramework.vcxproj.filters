@@ -78,6 +78,18 @@
     <ClCompile Include="Scene3.cpp">
       <Filter>Source Files\Scenes</Filter>
     </ClCompile>
+    <ClCompile Include="Trackball.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Skybox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Randomizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene4.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Debug.h">
@@ -152,6 +164,18 @@
     <ClInclude Include="Scene3.h">
       <Filter>Header Files\Scenes</Filter>
     </ClInclude>
+    <ClInclude Include="Trackball.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Skybox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Randomizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene4.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="GameEngineLog.txt">
@@ -181,6 +205,18 @@
       <Filter>Resource Files</Filter>
     </None>
     <None Include="shaders\multiLightsVert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\skyboxFrag.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\skyboxVert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\reflectionFrag.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\reflectionVert.glsl">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>

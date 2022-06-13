@@ -33,7 +33,7 @@ bool Scene4::OnCreate() {
 
 	sphere->OnCreate();
 
-	shader = new Shader(nullptr, "shaders/reflectionVert.glsl", "shaders/reflectionFrag.glsl");
+	shader = new Shader(nullptr, "shaders/reflectionVert.glsl", "shaders/noiseFrag.glsl");
 	if (shader->OnCreate() == false) {
 		std::cout << "Shader failed";
 	}
@@ -57,7 +57,8 @@ void Scene4::HandleEvents(const SDL_Event& sdlEvent) {
 	switch (sdlEvent.type) {
 	case SDL_KEYDOWN:
 		if (sdlEvent.key.keysym.scancode == SDL_SCANCODE_LEFT) {
-			sphere->SetModelMatrix(sphere->GetModelMatrix() *= MMath::rotate(10.0f, Vec3(0.0f, 1.0f, 0.0f)));
+			//Changed this to get a closer look, everything is now working. it was just a little far
+			sphere->SetModelMatrix(sphere->GetModelMatrix() *= MMath::translate(Vec3(0.0f, 0.0f, 1.0f)));
 		}
 		else if (sdlEvent.key.keysym.scancode == SDL_SCANCODE_RIGHT) {
 			sphere->SetModelMatrix(sphere->GetModelMatrix() *= MMath::rotate(-10.0f, Vec3(0.0f, 1.0f, 0.0f)));

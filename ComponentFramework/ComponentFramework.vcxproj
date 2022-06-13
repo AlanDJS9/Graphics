@@ -127,10 +127,12 @@
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Debug.cpp" />
     <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="Noise.cpp" />
     <ClCompile Include="Randomizer.cpp" />
     <ClCompile Include="Scene1.cpp" />
     <ClCompile Include="Scene2.cpp" />
     <ClCompile Include="Scene4.cpp" />
+    <ClCompile Include="Scene5.cpp" />
     <ClCompile Include="ScenePlanet.cpp" />
     <ClCompile Include="Scene3.cpp" />
     <ClCompile Include="SceneManager.cpp" />
@@ -152,10 +154,12 @@
     <ClInclude Include="Component.h" />
     <ClInclude Include="Debug.h" />
     <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Noise.h" />
     <ClInclude Include="Randomizer.h" />
     <ClInclude Include="Scene1.h" />
     <ClInclude Include="Scene2.h" />
     <ClInclude Include="Scene4.h" />
+    <ClInclude Include="Scene5.h" />
     <ClInclude Include="ScenePlanet.h" />
     <ClInclude Include="Scene3.h" />
     <ClInclude Include="SceneManager.h" />
@@ -164,6 +168,7 @@
     <ClInclude Include="Plane.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Scene0.h" />
+    <ClInclude Include="SDL_gamecontroller.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="Skybox.h" />
     <ClInclude Include="Sphere.h" />
@@ -179,12 +184,16 @@
     <Text Include="GameEngineLog.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="newReflecFrag.glsl" />
+    <None Include="newReflecVert.glsl" />
     <None Include="shaders\defaultFrag.glsl" />
     <None Include="shaders\defaultVert.glsl">
       <DeploymentContent>false</DeploymentContent>
     </None>
     <None Include="shaders\multiLightsFrag.glsl" />
     <None Include="shaders\multiLightsVert.glsl" />
+    <None Include="shaders\noiseFrag.glsl" />
+    <None Include="shaders\noiseVert.glsl" />
     <None Include="shaders\phongFrag.glsl" />
     <None Include="shaders\phongVert.glsl" />
     <None Include="shaders\reflectionFrag.glsl" />
@@ -193,6 +202,8 @@
     <None Include="shaders\skyboxVert.glsl" />
     <None Include="shaders\textureFrag.glsl" />
     <None Include="shaders\textureVert.glsl" />
+    <None Include="timeVert.glsl" />
+    <None Include="turbulenceFrag.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

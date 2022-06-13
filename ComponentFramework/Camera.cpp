@@ -22,11 +22,11 @@ Camera::~Camera() {
 
 bool Camera::OnCreate() {
 
-	//skybox = new Skybox("textures/posx.jpg", "textures/posy.jpg", "textures/posz.jpg",
-	//	"textures/negx.jpg", "textures/negy.jpg", "textures/negz.jpg");
-	skybox = new Skybox("textures/stars/StarSkyboxPosx.png", "textures/stars/StarSkyboxPosy.png", "textures/stars/StarSkyboxPosz.png",
+	skybox = new Skybox("textures/posx.jpg", "textures/posy.jpg", "textures/posz.jpg",
+		"textures/negx.jpg", "textures/negy.jpg", "textures/negz.jpg");
+	/*skybox = new Skybox("textures/stars/StarSkyboxPosx.png", "textures/stars/StarSkyboxPosy.png", "textures/stars/StarSkyboxPosz.png",
 		"textures/stars/StarSkyboxNegx.png", "textures/stars/StarSkyboxNegY.png", "textures/stars/StarSkyboxnegz.png");
-	bool status = skybox->OnCreate();
+	*/bool status = skybox->OnCreate();
 	return status;
 }
 

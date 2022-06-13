@@ -1,22 +1,40 @@
-Tue Apr  5 13:28:50 2022
+Tue Jun  7 02:38:52 2022
 [INFO]: Starting the SceneManager
-[INFO]: OpenGL version: 4.6.0 - Build 27.20.100.8729
-[INFO]: Graphics card vendor Intel
-[INFO]: Graphics card name Intel(R) UHD Graphics 630
-[INFO]: GLSL Version 4.60 - Build 27.20.100.8729
-[INFO]: Created Scene4: 
-[INFO]: Loading assets Scene4: 
+[INFO]: OpenGL version: 4.6.0 NVIDIA 511.79
+[INFO]: Graphics card vendor NVIDIA Corporation
+[INFO]: Graphics card name NVIDIA GeForce GTX 1660 Ti with Max-Q Design/PCIe/SSE2
+[INFO]: GLSL Version 4.60 NVIDIA
+[INFO]: Created Scene5: 
+[INFO]: Loading assets Scene5: 
 [INFO]: Uniforms:
 "projectionMatrix" loc:0
-"viewMatrix" loc:1
 "skybox" loc:2
+"viewMatrix" loc:1
 
 [INFO]: Uniforms:
 "modelMatrix" loc:2
+"noiseTexture" loc:5
+"normalMatrix" loc:3
+"offset" loc:4
 "projectionMatrix" loc:0
+"skybox" loc:6
 "viewMatrix" loc:1
-"skybox" loc:3
 
-[INFO]: Deleting assets Scene4: 
-[INFO]: Deleted Scene4: 
-[INFO]: Deleting the SceneManager
+[INFO]: Deleting assets Scene5: 
+[INFO]: Deleted Scene5: 
+[INFO]: Created Scene5: 
+[INFO]: Loading assets Scene5: 
+[INFO]: Uniforms:
+"projectionMatrix" loc:0
+"skybox" loc:2
+"viewMatrix" loc:1
+
+[INFO]: Uniforms:
+"modelMatrix" loc:2
+"noiseTexture" loc:5
+"normalMatrix" loc:3
+"offset" loc:4
+"projectionMatrix" loc:0
+"skybox" loc:6
+"viewMatrix" loc:1
+

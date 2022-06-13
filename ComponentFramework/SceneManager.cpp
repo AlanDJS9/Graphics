@@ -6,13 +6,14 @@
 #include "Scene1.h"//Assignmnet 1 - Mario with two light. No xtras YET! 
 #include "Scene2.h"//Skull three eyes moving
 #include "Scene3.h"//Simple skybox - not that simple
-#include "Scene4.h"
+#include "Scene4.h"// Stars skybox with reflective orb
+#include "Scene5.h"//
 
 #include "ScenePlanet.h"
 //Fancy cool way to start a class
 SceneManager::SceneManager(): 
 	currentScene(nullptr), window(nullptr), timer(nullptr),
-	fps(60), isRunning(false), fullScreen(false) {
+	fps(10), isRunning(false), fullScreen(false) {
 	Debug::Info("Starting the SceneManager", __FILE__, __LINE__);
 }
 
@@ -50,7 +51,7 @@ bool SceneManager::Initialize(std::string name_, int width_, int height_) {
 	}
 
 	/********************************   Default first scene   ***********************/
-	BuildNewScene(SCENE_NUMBER::SCENE4);
+	BuildNewScene(SCENE_NUMBER::SCENE5);
 	
 	return true;
 }
@@ -100,6 +101,9 @@ void SceneManager::HandleEvents() {
 			case SDL_SCANCODE_F4:
 				BuildNewScene(SCENE_NUMBER::SCENE4);
 				break;
+			case SDL_SCANCODE_F5:
+				BuildNewScene(SCENE_NUMBER::SCENE5);
+				break;
 			case SDL_SCANCODE_F6:
 				BuildNewScene(SCENE_NUMBER::SCENE6);
 				break;
@@ -148,7 +152,10 @@ void SceneManager::BuildNewScene(SCENE_NUMBER scene) {
 		currentScene = new Scene4();
 		status = currentScene->OnCreate();
 		break;
-
+	case SCENE_NUMBER::SCENE5:
+		currentScene = new Scene5();
+		status = currentScene->OnCreate();
+		break;
 	case SCENE_NUMBER::SCENE6:
 		currentScene = new ScenePlanet();
 		status = currentScene->OnCreate();

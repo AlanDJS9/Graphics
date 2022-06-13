@@ -100,7 +100,7 @@ void Scene1::Render() const {
 	glUniform3fv(shader->GetUniformID("lightPosB"), 1, lightPosB);
 
 	glBindTexture(GL_TEXTURE_2D,texture->getTextureID());
-	mesh->Render(GL_TRIANGLES);
+	mesh->Render(GL_LINES);
 	glBindTexture(GL_TEXTURE_2D, 0);
 
 	glUseProgram(0);

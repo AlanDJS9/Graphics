@@ -90,6 +90,12 @@
     <ClCompile Include="Scene4.cpp">
       <Filter>Source Files\Scenes</Filter>
     </ClCompile>
+    <ClCompile Include="Scene5.cpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Noise.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Debug.h">
@@ -176,6 +182,15 @@
     <ClInclude Include="Scene4.h">
       <Filter>Header Files\Scenes</Filter>
     </ClInclude>
+    <ClInclude Include="Scene5.h">
+      <Filter>Header Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Noise.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_gamecontroller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="GameEngineLog.txt">
@@ -217,6 +232,24 @@
       <Filter>Resource Files</Filter>
     </None>
     <None Include="shaders\reflectionVert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="newReflecFrag.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="newReflecVert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\noiseFrag.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shaders\noiseVert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="timeVert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="turbulenceFrag.glsl">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
